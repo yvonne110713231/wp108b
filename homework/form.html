@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  font-size: 16px;
+  margin: 0px;
+}
+label {
+  /* border: 1px solid black;
+  padding: 10px; */
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+button {
+  padding: 10px;
+  background-color: rgb(59, 132, 192);
+  border: 1px solid rgb(6, 36, 46);
+}
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+.main {
+    margin: 15px;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <form>
+        <fieldset>
+          <legend>個人資料</legend>
+        <label for="username">姓名:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">連絡電話:</label><br>
+        <input type="password" id="pwd" name="pwd"><br/>
+      
+        <label>報名景點</label><br>
+      <select id="cars" name="cars">
+        <option value="太武山">太武山</option>
+        <option value="烈嶼島">烈嶼島</option>
+        <option value="大膽島">大膽島</option>
+      </select><br/>
+        <label for="birthday">生日:</label><br/>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <label>便當</label><br>
+        <input type="radio" id="葷" name="gender" value="male">
+        <label for="male">葷</label><br>
+        <input type="radio" id="素" name="gender" value="female">
+        <label for="female">素</label><br>
+        <label>留言:</label><br/>
+      <textarea name="message">
+      
+      </textarea>
+      <br/><br/>
+          <button>報名</button><br/><br/>
+      <input type="checkbox" name="subscribe" value="subscribe">
+      <label>訂閱電子報</label>
+        </fieldset>
+      </form>      
+</div>
+
+</body>
+</html>
